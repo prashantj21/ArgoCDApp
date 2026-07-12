@@ -7,7 +7,7 @@ spec:
   project: default
 
   source:
-    repoURL: https://github.com/<your-username>/my-app-repo
+    repoURL: https://github.com/prashantj21/ArgoCDApp.git
     targetRevision: main
     path: manifests/
 
@@ -17,5 +17,5 @@ spec:
 
   syncPolicy:
     automated:
-      prune: false        # Start with manual sync
-      selfHeal: false
+      prune: true        # Start with manual sync
+      selfHeal: true
